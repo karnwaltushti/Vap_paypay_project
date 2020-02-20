@@ -1,0 +1,108 @@
+doctype html
+title #{title}
+style.
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            margin-top:20px;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        } 
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+        m{
+            background-color:#cae8cb;
+        }
+        div {
+        border-radius: 5px;
+        
+        }
+        a{
+        color:#000;
+        text-decoration:none;
+        }
+        a:hover{
+            color :#4d4d4d;
+            text-decoration:underline;
+        }
+        .circular--square {
+        border-radius: 50%;
+        }
+        
+body
+    div(style="background-color:#4CAF50;position: relative;top:-15px;left:-5px;height:65px ")
+        table(style="width:100%",border="0")
+            tr
+                td(style="width:160px") 
+                    h2(align="center",style="font-weight:bold;") VPal 
+                td(style="width:80px") 
+                    b 
+                        a(href='/home') Home
+                
+                td(style="width:125px")
+                    b 
+                        a(href='/courses') All Courses
+                
+                td(style="width:1350px")
+                    b 
+                        a(href='/action') Add Courses
+                td(style="margin-right:0px")
+                    b
+                        a(href='#') #{user_id}
+                td
+                    image(class="circular--square" src='us.png' style='width:35px; height:35px;')
+    div(style="background-color: #f2f2f2;padding: 20px;width:25%;margin-top:160px;margin-left:710px;")
+        form(action="/addpost" method="post")
+            table(align="center" ,style="background-color:#f2f2f2;width:100%;" )
+                tr
+                    th(style="padding-top:30px;")
+                        h1 #{message}
+                tr
+                    td
+                        p Course Name
+                    
+                        input(
+                            type='text'
+                            name='coursename'
+                            placeholder='Course Name' 
+                        )
+                tr
+                    td
+                        p Course Code
+                        
+                        input(
+                            type='text'
+                            name='coursecode'
+                            placeholder='Course Code'
+                        )
+                
+                tr
+                    td
+                        p Professor's Name
+                        input(
+                            type='text'
+                            name='professor'
+                            placeholder='Professor Name'
+                        )
+                tr
+                    td(align="center")
+                        input(
+                            type='submit'
+                            align="center"    
+                        )
+
