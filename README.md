@@ -1,12 +1,12 @@
 # Vap_paypay_project 
-The project implements a Course Registration System where we can Subscribe to or add the course ypu want to teach
+The project implements a Course Registration System where we can Subscribe to or add the course ypu want to teach<br/>
 
 index.js - the index file
-sel.js - login Authentication System, selecting the courses you want to subscribe
-course_creation.js - Creating your own course
-course.js - gives the details of all the registered courses by the logged in user
+sel.js - login Authentication System, selecting the courses you want to subscribe<br/>
+course_creation.js - Creating your own course<br/>
+course.js - gives the details of all the registered courses by the logged in user<br/>
 
-course_details.json - stores the information about the course, coursecode, coursename, Professor
+course_details.json - stores the information about the course, coursecode, coursename, Professor<br/>
 course_registered.json - stores the information about who has subscribed to which course<br/>
 courses.json - stores the coursecode of each of the created course<br/>
 login_credentials.json - stores the credentials of the users<br/>
