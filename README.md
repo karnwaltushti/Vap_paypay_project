@@ -11,7 +11,7 @@ course_registered.json - stores the information about who has subscribed to whic
 courses.json - stores the coursecode of each of the created course
 login_credentials.json - stores the credentials of the users
 
-**Express** is used for the seve
+**Express** is used for the sever<br/>
 **Pug** is used for the templates of all the pages
 **Promises** are used instead of callbacks for reading and writing into the files
 
